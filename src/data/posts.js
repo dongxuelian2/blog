@@ -1,5 +1,18 @@
 export const posts = [
   {
+    slug: 'sexual-selection-preference-modeling',
+    title: '性选择偏好的形成机制：费希尔过程的前置条件与生物建模',
+    date: '2026-05-26',
+    excerpt: '把性选择偏好视为可建模的多维权重系统，讨论偏好形成、选择反馈与群体性状分布之间的关系。',
+    tags: ['biology', 'modeling', 'sexual-selection'],
+    pdfPath: 'articles/sexual-selection-preference-modeling.pdf',
+    content: [
+      '本文把性选择偏好作为一个生物建模问题处理：偏好如何形成，如何影响选择，选择又如何反馈到群体性状分布之中。',
+      '文章从费希尔过程的前置条件出发，将偏好拆解为可建模的权重向量，并讨论遗传、发育、经验学习与文化环境共同作用的可能路径。',
+      'PDF 版本保留正文注释与脚注，并已移除首页个人信息。',
+    ],
+  },
+  {
     slug: 'shipping-first-post',
     title: 'Shipping the First Version of This Blog',
     date: '2026-04-16',

@@ -19,6 +19,12 @@ function PostPage() {
   }
 
   const { previousPost, nextPost } = getAdjacentPosts(slug)
+  const baseUrl = import.meta.env.BASE_URL.endsWith('/')
+    ? import.meta.env.BASE_URL
+    : `${import.meta.env.BASE_URL}/`
+  const pdfUrl = post.pdfPath
+    ? `${baseUrl}${post.pdfPath.replace(/^\//, '')}`
+    : null
 
   return (
     <article className="post-detail">
@@ -33,6 +39,13 @@ function PostPage() {
           <p key={paragraph}>{paragraph}</p>
         ))}
       </div>
+      {pdfUrl && (
+        <p>
+          <a className="pdf-link" href={pdfUrl} target="_blank" rel="noreferrer">
+            Open PDF
+          </a>
+        </p>
+      )}
       <PostNavigation previousPost={previousPost} nextPost={nextPost} />
     </article>
   )
