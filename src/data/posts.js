@@ -1,5 +1,17 @@
 export const posts = [
   {
+    slug: 'zhouyi-abc-conjecture',
+    title: '周易六十四卦直断甲乙丙三数根命：兼证西人所谓 abc 猜想',
+    date: '2026-07-27',
+    excerpt: '一篇以《周易》六十四卦解读 abc 猜想及甲、乙、丙三数关系的文章。',
+    tags: ['yi-jing', 'mathematics', 'essay'],
+    pdfPath: 'articles/zhouyi-abc-conjecture.pdf',
+    content: [
+      '本文从卦序、卦象与爻义出发，讨论甲、乙、丙三数关系及 abc 猜想的另一种解读路径。',
+      '全文以 PDF 形式发布，正文、页码与原有注释均已保留。',
+    ],
+  },
+  {
     slug: 'sexual-selection-preference-modeling',
     title: '性选择偏好的形成机制：费希尔过程的前置条件与生物建模',
     date: '2026-05-26',
